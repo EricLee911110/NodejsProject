@@ -2,6 +2,7 @@ const express = require('express');
 const { readFile } = require('fs').promises;
 
 const app = express();
+app.use(express.static('public'));
 
 app.get('/', async (request, response) => {
 
